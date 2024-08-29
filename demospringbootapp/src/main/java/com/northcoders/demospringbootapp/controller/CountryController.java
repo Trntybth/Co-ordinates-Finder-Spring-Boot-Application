@@ -30,4 +30,9 @@ public class CountryController {
     public CountryList countryList(@RequestParam String name) {
         return daoCountries.getResponseBody(name);
     }
+
+    @GetMapping("/")
+    public String greeting() {
+        return "Welcome to co ordinates finder!";
+    }
 }
